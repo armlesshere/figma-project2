@@ -1,0 +1,50 @@
+@import "_bootstrap";
+@import "_fonts";
+@import "_values";
+
+//-------------------------------------
+
+nav {
+    background-color: $c141;
+
+
+    .navbar-brand {
+        img {}
+    }
+
+
+    .navbar-collapse {
+        justify-content: space-between;
+        align-items: center;
+
+        .navbar-nav {
+            .nav-item {
+                a {
+                    color: $cf;
+                    padding-right: 60px;
+                }
+
+                &:last-child {
+                    a {
+                        padding-right: 0;
+                    }
+                }
+            }
+
+
+        }
+
+        .navbar-link {
+            display: flex;
+            padding: 19px 20px;
+            background-color: $c38d;
+            border-radius: 10px;
+            color: $cf;
+            text-decoration: none;
+            justify-content: flex-end;
+            cursor: pointer;
+        }
+    }
+
+
+}
