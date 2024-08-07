@@ -5,8 +5,8 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9672,6 +9672,11 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+body {
+  font-family: "Inter";
+  background-color: #FAFAFA;
+}
+
 nav {
   background-color: #141F39;
 }
@@ -9696,6 +9701,12 @@ nav .navbar-collapse .navbar-link {
 header {
   background-color: #141F39;
 }
+header .header-area {
+  padding-top: 131px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 header .header-area .header-title {
   color: #ffffff;
   font-weight: 700;
@@ -9710,7 +9721,9 @@ header .header-area .header-title img {
   position: absolute;
 }
 header .header-area .header-desc {
-  color: #ffffff;
+  padding-top: 18px;
+  padding-bottom: 48px;
+  color: rgba(255, 255, 255, 0.4392156863);
   font-size: 18px;
   text-align: center;
   font-weight: 400;
@@ -9720,6 +9733,9 @@ header .header-area .header-buttons a {
   cursor: pointer;
   border-radius: 10px;
   text-decoration: none;
+}
+header .header-area .header-buttons a img {
+  padding-left: 9px;
 }
 header .header-area .header-buttons a:first-child {
   background-color: #38DA71;
@@ -9731,8 +9747,143 @@ header .header-area .header-buttons a:last-child {
   border: 1px solid #ffffff;
   padding: 18px 26px;
 }
-header .header-area .header-includes .includes {
+header .header-area .header-includes {
+  padding-top: 40px;
+  text-align: center;
   font-size: 16px;
-  color: #ffffff;
   line-height: 24px;
+}
+header .header-area .header-includes span {
+  padding-right: 20px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.3764705882);
+  line-height: 24px;
+}
+header .header-area .header-includes span:last-child {
+  padding-right: 0;
+}
+header .header-area .header-includes span img {
+  padding-right: 8px;
+}
+header .header-img {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+header .header-img .img-box-area .img-box img {
+  width: 100%;
+}
+header .header-img .img-box-area .img-desc {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+header .header-img .img-box-area .img-desc a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header .header-brand {
+  background-color: #15BEE3;
+}
+header .header-brand .swiper .swiper-wrapper {
+  padding: 17px 0;
+  align-items: center !important;
+}
+
+section .business-area {
+  padding-top: 120px;
+}
+section .business-area .business-content-area {
+  text-align: center;
+}
+section .business-area .business-content-area .business-title {
+  font-family: "Plus Jakarta Sans";
+  font-size: 40px;
+  font-weight: 700;
+}
+section .business-area .business-content-area .business-desc {
+  padding-top: 16px;
+  font-size: 16px;
+  color: rgba(20, 31, 57, 0.4392156863);
+  font-weight: 400;
+}
+section .business-area .business-includes {
+  padding-top: 64px;
+}
+section .business-area .business-includes .security-shadow-box {
+  border-bottom: 7px solid #15BEE3;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+section .business-area .business-includes .business-security {
+  padding: 0 26px;
+}
+section .business-area .business-includes .business-security .security-icon {
+  padding-top: 64px;
+  padding-bottom: 16px;
+}
+section .business-area .business-includes .business-security .security-title {
+  color: #141F39;
+  font-size: 21px;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+}
+section .business-area .business-includes .business-security .security-desc {
+  padding-top: 8px;
+  padding-bottom: 65px;
+  color: rgba(79, 79, 79, 0.4392156863);
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 400;
+}
+section .online-support-msg {
+  padding: 96px 0 120px 0;
+}
+section .online-support-msg .online-support {
+  display: flex;
+  justify-content: center;
+}
+
+article .better-security .better-title {
+  font-size: 48px;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+  color: #141F39;
+}
+article .better-security .better-desc {
+  font-weight: 400;
+  font-size: 16px;
+  padding: 16px 0 48px 0;
+  color: rgba(20, 31, 57, 0.4392156863);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+article .better-security .cc-img img {
+  position: relative;
+  bottom: 70px;
+  width: 100%;
+}
+article .better-security .better-includes {
+  padding-top: 65px;
+}
+article .better-security .better-includes:last-child {
+  padding-top: 32px;
+}
+article .better-security .better-includes .include-title {
+  font-size: 32px;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+}
+article .better-security .better-includes .include-title img {
+  position: absolute;
+  z-index: -1;
+}
+article .better-security .better-includes .include-desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(20, 31, 57, 0.4392156863);
+}
+
+section {
+  background-color: #141F39;
+}
+section .performance-key-area {
+  padding: 120px 0;
 }/*# sourceMappingURL=style.css.map */
