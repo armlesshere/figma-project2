@@ -10,7 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^4.6.2",
     "swiper": "^11.1.9"
   }
 }

@@ -14,19 +14,18 @@ nav {
 
 
     .navbar-collapse {
-        justify-content: space-between;
-        align-items: center;
+
 
         .navbar-nav {
             .nav-item {
                 a {
                     color: $cf;
-                    padding-right: 60px;
+                    padding-right: 40px;
                 }
 
                 &:last-child {
                     a {
-                        padding-right: 0;
+                        padding-right: 85px;
                     }
                 }
             }
@@ -47,4 +46,65 @@ nav {
     }
 
 
+}
+
+header {
+    background-color: $c141;
+
+
+
+    .header-area {
+        .header-title {
+            color: $cf ;
+            font-weight: $bold;
+            font-size: 70px;
+            text-align: center;
+            position: relative;
+            z-index: 999;
+            font-family: "Plus Jakarta Sans";
+
+            img {
+                z-index: -1;
+                position: absolute;
+            }
+        }
+
+
+
+        .header-desc {
+            color: $cf ;
+            font-size: 18px;
+            text-align: center;
+            font-weight: $regular;
+        }
+
+        .header-buttons {
+            a {
+                color: $cf ;
+                cursor: pointer;
+                border-radius: 10px;
+                text-decoration: none;
+
+                &:first-child {
+                    background-color: $c38d;
+                    padding: 18px 30.5px;
+                    margin-right: 16px;
+                }
+
+                &:last-child {
+                    margin-left: 16px;
+                    border: 1px solid $cf;
+                    padding: 18px 26px;
+                }
+            }
+        }
+
+        .header-includes {
+            .includes {
+                font-size: 16px;
+                color: $cf ;
+                line-height: 24px;
+            }
+        }
+    }
 }
