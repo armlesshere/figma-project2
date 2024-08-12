@@ -1,0 +1,24 @@
+.mt135 {
+    margin-top: 135px;
+}
+
+.selected {
+    border-bottom: 7px solid $cff9;
+}
+
+.mt213 {
+    margin-top: 213px;
+}
+
+.title {
+    color: $c141;
+    font-family: "Chivo";
+    font-size: 16px;
+    padding-bottom: 16px;
+    font-weight: $bold;
+}
+
+.security-shadow-box {
+    border-bottom: 7px solid $c15b;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

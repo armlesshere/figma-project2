@@ -7,6 +7,7 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9672,6 +9673,162 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.mt135 {
+  margin-top: 135px;
+}
+
+.selected {
+  border-bottom: 7px solid #FF928A;
+}
+
+.mt213 {
+  margin-top: 213px;
+}
+
+.title {
+  color: #141F39;
+  font-family: "Chivo";
+  font-size: 16px;
+  padding-bottom: 16px;
+  font-weight: 700;
+}
+
+.security-shadow-box {
+  border-bottom: 7px solid #15BEE3;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   font-family: "Inter";
   background-color: #FAFAFA;
@@ -9718,6 +9875,8 @@ header .header-area .header-title {
 }
 header .header-area .header-title img {
   z-index: -1;
+  left: -6px;
+  bottom: -20px;
   position: absolute;
 }
 header .header-area .header-desc {
@@ -9727,6 +9886,7 @@ header .header-area .header-desc {
   font-size: 18px;
   text-align: center;
   font-weight: 400;
+  z-index: 999;
 }
 header .header-area .header-buttons a {
   color: #ffffff;
@@ -9809,12 +9969,9 @@ header .header-brand .swiper .swiper-wrapper {
 .bussines-section-area .business-area .business-includes {
   padding-top: 64px;
 }
-.bussines-section-area .business-area .business-includes .security-shadow-box {
-  border-bottom: 7px solid #15BEE3;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
 .bussines-section-area .business-area .business-includes .business-security {
   padding: 0 26px;
+  background-color: #ffffff;
 }
 .bussines-section-area .business-area .business-includes .business-security .security-icon {
   padding-top: 64px;
@@ -9840,6 +9997,13 @@ header .header-brand .swiper .swiper-wrapper {
 .bussines-section-area .online-support-msg .online-support {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.bussines-section-area .online-support-msg .online-support strong {
+  padding: 0 3px 0 5px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #141F39;
 }
 
 .article-security-area {
@@ -9947,4 +10111,258 @@ header .header-brand .swiper .swiper-wrapper {
 
 .application-article-area {
   background-color: #FAFAFA;
+}
+.application-article-area .application-area .application-title {
+  font-weight: 700;
+  color: #141F39;
+  padding-top: 120px;
+  font-size: 48px;
+  font-family: "Plus Jakarta Sans";
+}
+.application-article-area .application-area .application-desc {
+  padding-top: 16px;
+  color: rgba(20, 31, 57, 0.4392156863);
+  font-size: 16px;
+}
+.application-article-area .application-area .active-user-area .active-users {
+  padding-top: 60px;
+  display: flex;
+  justify-content: flex-start;
+}
+.application-article-area .application-area .active-user-area .active-users .user-statistic {
+  padding-left: 20.44px;
+}
+.application-article-area .application-area .active-user-area .active-users .user-statistic .user-title {
+  color: #141F39;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.application-article-area .application-area .active-user-area .active-users .user-statistic .user-desc {
+  padding-top: 2px;
+  color: rgba(18, 20, 29, 0.3764705882);
+  font-size: 16px;
+  line-height: 24px;
+}
+.application-article-area .ideas-area {
+  padding-bottom: 107px;
+}
+.application-article-area .ideas-area .idea-box {
+  padding: 0 25px 0 24px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+}
+.application-article-area .ideas-area .idea-box .idea-icon {
+  padding: 32px 0 24px 0;
+}
+.application-article-area .ideas-area .idea-box .idea-title {
+  font-size: 21px;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+  color: #141F39;
+}
+.application-article-area .ideas-area .idea-box .idea-desc {
+  color: #4f4f4f;
+  font-size: 16px;
+  padding: 8px 0 32px 0;
+}
+
+.ready-to-use-section-area {
+  background-color: #ffffff;
+}
+.ready-to-use-section-area .use-app-area {
+  padding-top: 120px;
+}
+.ready-to-use-section-area .use-app-area .use-app-title {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Plus Jakarta Sans";
+  text-align: center;
+  color: #141F39;
+}
+.ready-to-use-section-area .use-app-area .use-app-desc {
+  padding: 16px 0 40px 0;
+  color: rgba(20, 31, 57, 0.4392156863);
+  font-size: 16px;
+  text-align: center;
+}
+.ready-to-use-section-area .use-app-area .use-app-form .email-box-area {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 20px 12px 20px 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.ready-to-use-section-area .use-app-area .use-app-form .email-box-area input {
+  border: none;
+  font-size: 16px;
+}
+.ready-to-use-section-area .use-app-area .use-app-form .email-box-area input:focus-visible {
+  outline: none;
+}
+.ready-to-use-section-area .use-app-area .use-app-form .email-box-area a {
+  color: #ffffff;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 20px 48.5px;
+  background-color: #38DA71;
+}
+.ready-to-use-section-area .use-app-area .sign-in-text {
+  padding-top: 40px;
+  padding-bottom: 120px;
+  text-align: center;
+  color: #141F39;
+}
+.ready-to-use-section-area .use-app-area .sign-in-text a {
+  text-decoration: none;
+  color: #141F39;
+  font-weight: 700;
+}
+
+.we-help-to-grow-article-area {
+  background-color: #141F39;
+}
+.we-help-to-grow-article-area .dashboard {
+  padding-top: 80px;
+  width: 100%;
+}
+.we-help-to-grow-article-area .grow-text-area .grow-title {
+  padding: 120px 0 24px 0;
+  font-size: 48px;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+.we-help-to-grow-article-area .grow-text-area .grow-title img {
+  position: absolute;
+  width: 86px;
+  z-index: -1;
+  top: 100px;
+}
+.we-help-to-grow-article-area .grow-text-area .grow-desc {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4392156863);
+  padding-bottom: 40px;
+  font-size: 16px;
+}
+.we-help-to-grow-article-area .app-statistic {
+  text-align: center;
+  padding-top: 40px;
+}
+.we-help-to-grow-article-area .app-statistic .app-statistic-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 48px;
+  font-family: "Plus Jakarta Sans";
+  text-align: center;
+  padding-bottom: 8px;
+}
+.we-help-to-grow-article-area .app-statistic .app-statistic-desc {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.testimonial-section-area {
+  background-color: rgba(255, 255, 255, 0.4392156863);
+  padding-bottom: 120px;
+}
+.testimonial-section-area .testimonial-area {
+  padding-top: 120px;
+}
+.testimonial-section-area .testimonial-area .testimonial-title {
+  font-weight: 700;
+  font-size: 48px;
+  font-family: "Plus Jakarta Sans";
+  text-align: center;
+  color: #141F39;
+  padding-bottom: 16px;
+}
+.testimonial-section-area .testimonial-area .testimonial-desc {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(20, 31, 57, 0.4392156863);
+  padding-bottom: 64px;
+}
+.testimonial-section-area .button-area {
+  padding-top: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.testimonial-section-area .button-area a img {
+  width: 100%;
+}
+.testimonial-section-area .people-card-box .profile-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.testimonial-section-area .people-card-box .profile-content .profile-name {
+  padding-left: 24px;
+  color: #141F39;
+  font-size: 20px;
+}
+.testimonial-section-area .people-card-box .profile-content .profile-name .profile-work {
+  padding-top: 8px;
+  font-size: 14px;
+  color: rgba(20, 31, 57, 0.4392156863);
+}
+.testimonial-section-area .people-card-box .profile-comment {
+  font-size: 18px;
+  color: #141F39;
+  padding-top: 20px;
+}
+
+footer {
+  padding-top: 80px;
+  background-color: #ffffff;
+}
+footer .brand-social-links {
+  padding-top: 45px;
+}
+footer .brand-social-links a {
+  padding-right: 24px;
+}
+footer .brand-social-links a:last-child {
+  padding-right: 0;
+}
+footer .copyright {
+  padding-top: 45px;
+}
+footer .footer-info-area .brand-logo {
+  padding-bottom: 24px;
+}
+footer .footer-info-area .brand-info {
+  font-family: "Chivo";
+  color: #52525b;
+  font-size: 16px;
+}
+footer .footer-info-area .brand-contact {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+footer .footer-info-area .brand-contact a {
+  color: #52525b;
+  padding-bottom: 12px;
+  display: inline-block;
+  font-family: "Chivo";
+  text-decoration: none;
+}
+footer .footer-info-area .brand-contact a:last-child {
+  padding-bottom: 0;
+}
+footer .footer-info-area .download-app {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-link-area .footer-link {
+  color: #52525b;
+  font-family: "Chivo";
+  font-size: 16px;
+  padding-bottom: 12px;
+}
+footer .footer-link-area .footer-link:last-of-type {
+  padding-bottom: 0;
 }/*# sourceMappingURL=style.css.map */

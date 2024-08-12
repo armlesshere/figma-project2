@@ -1,6 +1,9 @@
 @import "_bootstrap";
 @import "_fonts";
 @import "_values";
+@import "_classes";
+@import "_reset-css";
+
 
 //-------------------------------------
 body {
@@ -68,6 +71,8 @@ header {
 
             img {
                 z-index: -1;
+                left: -6px;
+                bottom: -20px;
                 position: absolute;
             }
         }
@@ -79,6 +84,7 @@ header {
             font-size: 18px;
             text-align: center;
             font-weight: $regular;
+            z-index: 999;
         }
 
         .header-buttons {
@@ -159,6 +165,7 @@ header {
     .header-brand {
         background-color: $c15b;
 
+
         .swiper {
             .swiper-wrapper {
                 padding: 17px 0;
@@ -192,14 +199,10 @@ header {
         .business-includes {
             padding-top: 64px;
 
-
-            .security-shadow-box {
-                border-bottom: 7px solid $c15b;
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            }
-
             .business-security {
                 padding: 0 26px;
+                background-color: $cf;
+                ;
 
                 .security-icon {
                     padding-top: 64px;
@@ -229,8 +232,16 @@ header {
         padding: 96px 0 120px 0;
 
         .online-support {
+            strong {
+                padding: 0 3px 0 5px;
+                font-size: 20px;
+                font-weight: $bold;
+                color: $c141;
+            }
+
             display: flex;
             justify-content: center;
+            align-items: center;
 
 
         }
@@ -366,4 +377,335 @@ header {
 
 .application-article-area {
     background-color: $cfa;
+
+    .application-area {
+        .application-title {
+            font-weight: $bold;
+            color: $c141;
+            padding-top: 120px;
+            font-size: 48px;
+            font-family: "Plus Jakarta Sans";
+        }
+
+        .application-desc {
+            padding-top: 16px;
+            color: $c14170;
+            font-size: 16px;
+        }
+
+        .active-user-area {
+            .active-users {
+                padding-top: 60px;
+                display: flex;
+                justify-content: flex-start;
+
+                .user-statistic {
+                    padding-left: 20.44px;
+
+                    .user-title {
+                        color: $c141;
+                        font-size: 24px;
+                        font-weight: $bold;
+                        line-height: 28px;
+                    }
+
+                    .user-desc {
+                        padding-top: 2px;
+                        color: $c12160;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    .ideas-area {
+        padding-bottom: 107px;
+
+        .idea-box {
+            padding: 0 25px 0 24px;
+            margin-bottom: 30px;
+            background-color: $cf;
+
+            .idea-icon {
+                padding: 32px 0 24px 0;
+            }
+
+            .idea-title {
+                font-size: 21px;
+                font-family: "Plus Jakarta Sans";
+                font-weight: $bold;
+                color: $c141;
+            }
+
+            .idea-desc {
+                color: $c4f;
+                font-size: 16px;
+                padding: 8px 0 32px 0;
+            }
+        }
+    }
+}
+
+.ready-to-use-section-area {
+    background-color: $cf;
+
+    .use-app-area {
+        padding-top: 120px;
+
+        .use-app-title {
+            font-size: 48px;
+            font-weight: $bold;
+            font-family: "Plus Jakarta Sans";
+            text-align: center;
+            color: $c141;
+        }
+
+        .use-app-desc {
+            padding: 16px 0 40px 0;
+            color: $c14170;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .use-app-form {
+            .email-box-area {
+                display: flex;
+                justify-content: space-between;
+                border-radius: 16px;
+                padding: 20px 12px 20px 12px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                input {
+                    border: none;
+
+                    font-size: 16px;
+
+                    &:focus-visible {
+                        outline: none;
+                    }
+                }
+
+                a {
+                    color: $cf;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    padding: 20px 48.5px;
+                    background-color: $c38d;
+                }
+            }
+        }
+
+        .sign-in-text {
+            padding-top: 40px;
+            padding-bottom: 120px;
+            text-align: center;
+            color: $c141;
+
+            a {
+                text-decoration: none;
+                color: $c141;
+                font-weight: $bold;
+            }
+
+        }
+    }
+}
+
+.we-help-to-grow-article-area {
+    background-color: $c141;
+
+    .dashboard {
+        padding-top: 80px;
+        width: 100%;
+    }
+
+    .grow-text-area {
+        .grow-title {
+            padding: 120px 0 24px 0;
+            font-size: 48px;
+            font-family: "Plus Jakarta Sans";
+            font-weight: $bold;
+            color: $cf;
+            text-align: center;
+            position: relative;
+            z-index: 0;
+
+            img {
+                position: absolute;
+                width: 86px;
+                z-index: -1;
+                top: 100px;
+            }
+        }
+
+        .grow-desc {
+            text-align: center;
+            color: $cf70;
+            padding-bottom: 40px;
+            font-size: 16px;
+        }
+    }
+
+
+    .app-statistic {
+        text-align: center;
+        padding-top: 40px;
+
+        .app-statistic-title {
+            color: $cf;
+            font-weight: $bold;
+
+            font-size: 48px;
+            font-family: "Plus Jakarta Sans";
+            text-align: center;
+            padding-bottom: 8px;
+        }
+
+        .app-statistic-desc {
+            color: $cf;
+
+            font-size: 18px;
+
+        }
+    }
+}
+
+.testimonial-section-area {
+    background-color: $cf70;
+    padding-bottom: 120px;
+
+    .testimonial-area {
+        padding-top: 120px;
+
+        .testimonial-title {
+            font-weight: $bold;
+            font-size: 48px;
+            font-family: "Plus Jakarta Sans";
+            text-align: center;
+            color: $c141;
+            padding-bottom: 16px;
+        }
+
+        .testimonial-desc {
+            text-align: center;
+            font-size: 16px;
+            color: $c14170;
+            padding-bottom: 64px;
+        }
+    }
+
+    .button-area {
+        padding-top: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .people-card-box {
+        .profile-content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .profile-name {
+                padding-left: 24px;
+                color: $c141;
+                font-size: 20px;
+
+                .profile-work {
+                    padding-top: 8px;
+                    font-size: 14px;
+                    color: $c14170;
+                }
+            }
+        }
+
+        .profile-comment {
+            font-size: 18px;
+            color: $c141;
+            padding-top: 20px;
+        }
+    }
+}
+
+footer {
+    padding-top: 80px;
+    background-color: $cf;
+
+    .brand-social-links {
+        padding-top: 45px;
+
+        a {
+            padding-right: 24px;
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+
+    .copyright {
+        padding-top: 45px;
+    }
+
+    .footer-info-area {
+        .brand-logo {
+            padding-bottom: 24px;
+        }
+
+        .brand-info {
+            font-family: "Chivo";
+            color: $c52;
+            font-size: 16px;
+
+        }
+
+        .brand-contact {
+            padding-top: 24px;
+
+
+            a {
+                color: $c52;
+                padding-bottom: 12px;
+                display: inline-block;
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
+
+                font-family: "Chivo";
+                text-decoration: none;
+
+            }
+
+            padding-bottom:24px;
+        }
+
+        .download-app {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+    }
+
+    .footer-link-area {
+        .footer-link {
+            color: $c52;
+            font-family: "Chivo";
+            font-size: 16px;
+            padding-bottom: 12px;
+
+            &:last-of-type {
+                padding-bottom: 0;
+            }
+        }
+    }
 }
