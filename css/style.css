@@ -9693,9 +9693,17 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 700;
 }
 
+.br10 {
+  border-radius: 10px;
+}
+
 .security-shadow-box {
   border-bottom: 7px solid #15BEE3;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.shadow-1 {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 html,
@@ -10266,7 +10274,7 @@ header .header-brand .swiper .swiper-wrapper {
 }
 
 .testimonial-section-area {
-  background-color: rgba(255, 255, 255, 0.4392156863);
+  background-color: #ffffff;
   padding-bottom: 120px;
 }
 .testimonial-section-area .testimonial-area {
@@ -10294,6 +10302,10 @@ header .header-brand .swiper .swiper-wrapper {
 .testimonial-section-area .button-area a img {
   width: 100%;
 }
+.testimonial-section-area .people-card-box {
+  background-color: #ffffff;
+  padding: 36px 40px;
+}
 .testimonial-section-area .people-card-box .profile-content {
   display: flex;
   justify-content: flex-start;
@@ -10317,7 +10329,7 @@ header .header-brand .swiper .swiper-wrapper {
 
 footer {
   padding-top: 80px;
-  background-color: #ffffff;
+  background-color: #FAFAFA;
 }
 footer .brand-social-links {
   padding-top: 45px;

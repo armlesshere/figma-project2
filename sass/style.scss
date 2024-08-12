@@ -573,7 +573,7 @@ header {
 }
 
 .testimonial-section-area {
-    background-color: $cf70;
+    background-color: $cf;
     padding-bottom: 120px;
 
     .testimonial-area {
@@ -609,6 +609,11 @@ header {
     }
 
     .people-card-box {
+
+
+        background-color: $cf;
+        padding: 36px 40px;
+
         .profile-content {
             display: flex;
             justify-content: flex-start;
@@ -633,11 +638,12 @@ header {
             padding-top: 20px;
         }
     }
+
 }
 
 footer {
     padding-top: 80px;
-    background-color: $cf;
+    background-color: $cfa;
 
     .brand-social-links {
         padding-top: 45px;

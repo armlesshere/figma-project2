@@ -18,7 +18,15 @@
     font-weight: $bold;
 }
 
+.br10 {
+    border-radius: 10px;
+}
+
 .security-shadow-box {
     border-bottom: 7px solid $c15b;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.shadow-1 {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
